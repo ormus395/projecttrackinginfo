@@ -1,0 +1,156 @@
+/* header */
+
+.header {
+  align-items: center;
+  padding: 2.1111rem 0;
+  position: relative;
+  margin-bottom: 7rem;
+}
+
+/* nav */
+.nav__items {
+  align-items: center;
+}
+
+.nav__item {
+  margin-right: 2.3rem;
+}
+
+.logo {
+  background: url(../images/logo.svg);
+
+  cursor: pointer;
+
+  height: 24px;
+  width: 24px;
+}
+
+.mobile__toggle {
+  background: url(../images/icon-hamburger.svg);
+  display: none;
+  cursor: pointer;
+  height: 20px;
+  width: 24px;
+}
+
+.nav__mobile {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc;
+  position: absolute;
+  /* margin: 0 auto; */
+  left: 0;
+  /* padding: 3.1111rem 0; */
+  right: 0;
+  text-align: center;
+  top: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.mobile__item {
+  height: 100%;
+  margin: 2rem 0;
+}
+
+.spacer {
+  border-bottom: 1px solid hsl(231, 7%, 65%);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.dot {
+  color: hsl(231, 7%, 65%);
+}
+
+.login {
+  color: hsl(231, 7%, 65%);
+}
+
+/* main */
+.main {
+  flex: 1 0 auto;
+}
+/* hero */
+.hero {
+  justify-content: space-between;
+  height: 100%;
+}
+
+.hero__text {
+  max-width: 500px;
+  margin-left: 165px;
+}
+
+.sub-title {
+  color: hsl(231, 7%, 65%);
+  margin-bottom: 2rem;
+}
+
+.emp {
+  color: white;
+  background-color: black;
+  border-radius: 100px;
+  padding: 7px 11px;
+  margin-right: 1rem;
+}
+
+.title {
+  line-height: 1.2;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+}
+
+.hero__sub-text {
+  color: hsl(231, 7%, 65%);
+  margin-bottom: 3.94rem;
+  line-height: 1.3;
+}
+
+.hero__cta {
+  align-items: center;
+}
+
+.hero__cta p {
+  color: hsl(231, 7%, 65%);
+  margin-left: 1rem;
+  text-transform: uppercase;
+  word-spacing: 0.5rem;
+}
+
+.hero__img {
+  flex-grow: 2;
+  top: 0;
+  overflow: hidden;
+  position: relative;
+
+  /* width: 50%; */
+}
+
+.hero__img img {
+  position: absolute;
+  right: -10%;
+  width: 100%;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 760px) {
+  .nav__items {
+    display: none;
+  }
+
+  .mobile__toggle {
+    display: block;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .hero__text {
+    margin-left: 2rem;
+  }
+}
